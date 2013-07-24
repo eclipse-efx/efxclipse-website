@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+<META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/bootstrap-responsive.css">
+<link rel="stylesheet" href="css/custom.css">
+
+<script src="js/jquery-1.7.1.min.js"></script>
+
+<title>e(fx)clipse - JavaFX Tooling and Runtime for Eclipse</title>
+</head>
+<body>
+
+<div class="navbar navbar-inverse navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container">
+			<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            	<span class="icon-bar"></span>
+            	<span class="icon-bar"></span>
+            	<span class="icon-bar"></span>
+			</button>
+			<a class="brand" href="index.html">e(fx)clipse</a>
+          	<div class="nav-collapse collapse">
+            	<ul class="nav">
+              		<li class="active"><a href="index.html">Home</a></li>
+              		<li><a href="install.html">Install</a></li>
+              		<li><a href="http://wiki.eclipse.org/Efxclipse/Tooling/FXGraph">FXGraph</a></li>
+              		<li><a href="http://wiki.eclipse.org/Efxclipse/Tutorials">Tutorials</a></li>
+              		<li><a href="releases.html">Releases</a></li>
+              		<li><a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=Efxclipse">Bug Tracker</a></li>
+              		<li><a href="http://wiki.eclipse.org/Efxclipse">Wiki</a></li>
+              		<li><a href="http://www.eclipse.org/forums/index.php/f/259/">Forum</a></li>
+              		<li><a href="http://projects.eclipse.org/projects/technology.efxclipse">Project Info</a>
+            	</ul>
+          	</div>
+		</div>
+	</div>
+</div>
+
+<header class="jumbotron masthead" id="overview">
+ <div class="inner">
+  <div class="container">
+   <h1>e(fx)clipse by BestSolution.at</h1>
+   <p class="lead">
+     JavaFX 2 Tooling and Runtime for Eclipse and OSGi
+   </p>
+   </div>
+ </div>
+</header>
+
+<div class="container">
+ <section id="about-efxclipse">
+  <div class="page-header">
+   <h1>About <small>a short intro</small></h1>
+  </div>
+  <div class="row">
+   <div class="span-one-third">
+    <h2>Tooling</h2>
+    <p>
+    e(fx)clipse provides JavaFX tooling for the Eclipse IDE. We support Eclipse 4.2.x, 3.8.x, and 3.7.2.
+    <ul>
+     <li>JDT Support</li>
+     <li>PDE Support</li>
+     <li>UI DSL for authoring FXML</li>
+     <li>...</li>
+    </ul>
+    </p>
+   </div>
+   <div class="span-one-third">
+    <h2>Runtime</h2>
+    <p>
+    It's not all about tooling in the e(fx)clipse project: we also provide a runtime platform and libraries you can use in your JavaFX 2.x applications.
+    <ul>
+     <li>EMF Edit UI for JavaFX</li>
+     <li>Support for OSGi</li>
+     <li>Support for the Eclipse 4 Application Platform</li>
+     <li>...</li>
+    </ul>
+    </p>
+   </div>
+   <div class="span-one-third">
+    <h2>Platforms</h2>
+    <p>
+     JavaFX 2.x is currently available on Windows, Mac OS X, and Linux as part of the JDK (JDK 7u6 and above). Our tooling supports all of these three platforms.
+    </p>
+   </div>
+  </div>
+  <div class="row">
+   <div class="span-one-third">
+    <p>
+     <a class="btn" href="#about-tooling">View details</a>
+    </p>
+   </div>
+   <div class="span-one-third">
+    <p>
+     <a class="btn" href="#about-runtime">View details</a>
+    </p>
+   </div>
+  </div>
+  <div>
+  <h4>Stay tuned</h4>
+  <p>
+  You can read about the latest developments on <a href="http://tomsondev.bestsolution.at/">Tom's blog</a>.
+  </p>
+  </div>
+  <div>
+  <h4>Looking for support?</h4>
+  <p>
+  Check out <a href="https://groups.google.com/forum/?fromgroups#!forum/efxclipse">e(fx)clipse on Google Groups</a> if you're looking for support on specific problems.
+  </p>
+  </div>
+ </section>
+ <section id="about-tooling">
+  <div class="page-header">
+   <h1>Tooling <small>It's all about your favorite IDE</small></h1>
+  </div>
+  <div class="row">
+   <div class="span2">
+    <h2>JDT</h2>
+   </div>
+   <div class="span6" style="padding-top: 10px;">
+       <img class="thumbnail" src="jdt_integration.png" />
+   </div>
+   <div class="span4">
+    <p>
+     By integrating into the Eclipse JDT, e.g., by providing a specialized classpath container, e(fx)clipse allows users to develop JavaFX applications in the same fashion they develop Swing and SWT applications.
+    </p>
+   </div>
+  </div>
+  <div class="row">
+   <div class="span2">
+    <h2>PDE</h2>
+   </div>
+   <div class="span6" style="padding-top: 10px;">
+       <img class="thumbnail" src="pde_integration.png" />
+   </div>
+   <div class="span4">
+    <p>
+     By integrating into the Eclipse PDE, e.g., by providing an enhanced PDEClasspath container, e(fx)clipse makes developing JavaFX applications for Eclipse Equinox as easy as developing  SWT/Swing applications.
+    </p>
+   </div>
+  </div>
+  <div class="row">
+   <div class="span2">
+    <h2>DSL</h2>
+   </div>
+   <div class="span6" style="padding-top: 10px;">
+       <img class="thumbnail" src="dsl_integration.png" />
+   </div>
+   <div class="span4">
+    <p>
+     JavaFX 2 allows for defining the UI structure using an XML format named <a href="http://docs.oracle.com/javafx/2/api/javafx/fxml/doc-files/introduction_to_fxml.html">FXML</a>. Unlike other XML formats, FXML has no DTD/Schema but it provides serialization for an arbitrary (JavaFX) object graph, which means standard XML editors are useless when it comes to FXML. 
+    </p>
+    <p>
+     e(fx)clipse is going another route by providing a tooling for a very simple object graph definition language 
+     named <b>FXGraph</b> which gets translated into FXML in the background. So you don't need an extra library at runtime
+     since JavaFX 2 can load FXML files natively.
+    </p>
+    <p>
+     One of the coolest feature of FXGraph is that it integrates with the Eclipse JDT, giving you for instance the Javadoc for all referenced elements and autocompletion support. The DSL allows the user to attach some extra information (e.g. CSS files) such that the integrated live preview can make use of them. 
+    </p>
+   </div>
+  </div>
+  <div class="row">
+   <div class="span2">
+    <h2>CSS</h2>
+   </div>
+   <div class="span6" style="padding-top: 10px;">
+       <img class="thumbnail" src="css_integration.png" />
+   </div>
+   <div class="span4"> 
+    <p>
+     Almost all IDEs provide a CSS editor, but this editor only knows about the attributes used inside HTML browser applications.
+     By providing a specialized CSS editor, which knows the CSS properties used by JavaFX 2, authoring CSS files for your JavaFX project is as easy as in web projects.
+    </p>
+    <p>
+     When you define your UI using FXGraph, you will see immediately the effect of your CSS changes on your application at runtime. This feature helps you try out different CSS settings without having to start and stop your application.
+    </p>
+   </div>
+  </div>
+  <div class="row">
+   <div class="span2">
+    <h2>FXML</h2>
+   </div>
+   <div class="span6" style="padding-top: 10px;">
+       <img class="thumbnail" src="fxml_tooling.png" />
+   </div>
+   <div class="span4"> 
+    <p>
+     <a href="http://docs.oracle.com/javafx/2/api/javafx/fxml/doc-files/introduction_to_fxml.html">FXML</a> is a DTD/Schema-less XML serialization specification for the definition of JavaFX UIs and Java object graphs in general. e(fx)clipse provides you with advanced tooling for authoring this file format. As the FXML file references Java elements, the editor tightly integrates with the Eclipse JDT such that, for instance, you can see the Javadoc of Java elements like classes and methods in your FXML editor.
+    </p>
+   </div>    
+  </div>
+ </section>
+ <section id="about-runtime">
+  <div class="page-header">
+   <h1>Runtime <small>It's all about frameworks</small></h1>
+  </div>
+  <div class="row">
+   <div class="span2">
+    <h2>EMF</h2>
+   </div>
+   <div class="span6" style="padding-top: 10px;">
+       <img class="thumbnail" src="emf_treeview_dnd.png" />
+   </div>
+   <div class="span4">
+    <p>
+     EMF Edit UI for JavaFX allows you to view your EMF models in JavaFX TextFields, ListViews, TreeViews and TableViews with only a few lines of code. It provides out-of-the-box support for drag &amp; drop, undo / redo, inline editing, dynamic icons, labels and overlays.
+    </p>
+   </div>
+  </div>
+  <div class="row">
+   <div class="span2">
+    <h2>JRE</h2>
+   </div>
+   <div class="span6" style="padding-top: 10px;">
+       <img class="thumbnail" src="jre_runtime.png" />
+   </div>
+   <div class="span4">
+    <p>
+     The e(fx)clipse standard library provides some useful extensions for writing JavaFX code. The library offers, among other features, additional layout panels people are familiar with in SWT, using Google Guice together with FXML, Eclipse databinding for JavaFX properties, and much more.
+    </p>
+   </div>
+  </div>
+  <div class="row">
+   <div class="span2">
+    <h2>OSGi</h2>
+   </div>
+   <div class="span6" style="padding-top: 10px;">
+       <img class="thumbnail" src="osgi_runtime.png" />
+   </div>
+   <div class="span4"> 
+    <p>
+     Unfortunately, JavaFX was not written with OSGi in mind so there are various sources of error when running inside OSGi. These problems include the location of the JavaFX binaries in your Java installation and class loading issues because of OSGi's visibility rules. e(fx)clipse provides helper libraries for dealing with all of those problems and makes writing JavaFX applications on top of Eclipse Equinox feel as easy as it is with SWT and Swing.
+    </p>
+   </div>
+  </div>
+  <div class="row">
+   <div class="span2">
+    <h2>RCP</h2>
+   </div>
+   <div class="span6" style="padding-top: 10px;">
+       <img class="thumbnail" src="e4_runtime.png" />
+   </div>
+   <div class="span4"> 
+    <p>
+     Once you start developing medium-sized to big JavaFX applications, you'll ask for a platform that provides a command/handler framework, a generic extension API, dependency injection, etc. Fortunately, such a platform is offered by the Eclipse 4.x SDK which, due to its design, can be used with any UI technology. e(fx)clipse provides so called JavaFX renderers for writing JavaFX RCP applications on this platform.
+    </p>
+   </div>
+  </div>
+ </section>
+</div>
+<footer class="footer">
+ <div class="container">
+  <p class="pull-right">
+   <a href="#">Back to top</a>
+  </p>
+  <p>
+   Created by <a target="_blank" href="http://www.bestsolution.at">BestSolution.at</a> with use of <a target="_blank" href="http://twitter.github.com/bootstrap/">Bootstrap</a> from twitter.
+  </p>
+ </div>
+</footer>
+
+
+	<script src="js/bootstrap-transition.js"></script>
+	<script src="js/bootstrap-alert.js"></script>
+	<script src="js/bootstrap-modal.js"></script>
+	<script src="js/bootstrap-dropdown.js"></script>
+	<script src="js/bootstrap-scrollspy.js"></script>
+	<script src="js/bootstrap-tab.js"></script>
+	<script src="js/bootstrap-tooltip.js"></script>
+	<script src="js/bootstrap-popover.js"></script>
+	<script src="js/bootstrap-button.js"></script>
+	<script src="js/bootstrap-collapse.js"></script>
+	<script src="js/bootstrap-carousel.js"></script>
+	<script src="js/bootstrap-typeahead.js"></script>
+	
+	
+	<!-- Include the plug-in -->
+	<script src="js/jquery.easing.1.3.js" type="text/javascript"></script>
+	<script src="js/custom.js" type="text/javascript"></script>
+
+</body>
+</html>

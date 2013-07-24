@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+<head>
+<META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/bootstrap-responsive.css">
+<link rel="stylesheet" href="css/custom.css">
+
+<script src="js/jquery-1.7.1.min.js"></script>
+
+<title>e(fx)clipse - JavaFX Tooling and Runtime for Eclipse</title>
+</head>
+<body>
+
+<div class="navbar navbar-inverse navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container">
+			<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            	<span class="icon-bar"></span>
+            	<span class="icon-bar"></span>
+            	<span class="icon-bar"></span>
+			</button>
+			<a class="brand" href="index.html">e(fx)clipse</a>
+          	<div class="nav-collapse collapse">
+            	<ul class="nav">
+              		<li><a href="index.html">Home</a></li>
+              		<li class="active"><a href="install.html">Install</a></li>
+              		<li><a href="http://wiki.eclipse.org/Efxclipse/Tooling/FXGraph">FXGraph</a></li>
+              		<li><a href="http://wiki.eclipse.org/Efxclipse/Tutorials">Tutorials</a></li>
+              		<li><a href="releases.html">Releases</a></li>
+              		<li><a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=Efxclipse">Bug Tracker</a></li>
+              		<li><a href="http://wiki.eclipse.org/Efxclipse">Wiki</a></li>
+              		<li><a href="http://www.eclipse.org/forums/index.php/f/259/">Forum</a></li>
+              		<li><a href="http://projects.eclipse.org/projects/technology.efxclipse">Project Info</a>
+            	</ul>
+          	</div>
+		</div>
+	</div>
+</div>
+
+<header class="jumbotron masthead" id="overview">
+ <div class="inner">
+  <div class="container">
+   <h1>e(fx)clipse</h1>
+   <p class="lead">
+     JavaFX Tooling and Runtime for Eclipse and OSGi
+   </p>
+   </div>
+ </div>
+</header>
+
+<div class="container">
+ <section id="prereq-efxclipse">
+ 	<div class="page-header">
+ 	 <h1>Prerequisites <small>from external parties</small></h1>
+ 	</div>
+ 	<div class="row">
+   <div class="span16">
+   <p>
+     You'll need at least JDK 7u7 installed in your system. Make sure your e(fx)clipse installation uses this JDK.
+   </p>
+   </div>
+   </div>
+ </section>
+ <section id="about-efxclipse">
+  <div class="page-header">
+   <h1>Download &amp; Install <small>we get you started</small></h1>
+  </div>
+  <div class="row">
+   <div class="span6">
+    <h3>For the lazy</h3>
+    <p>
+     For the lazy ones who prefer an all-in-one download, we provide preconfigured packages so that you don't have to worry
+     about all the different bits and pieces.
+    </p>
+   </div>
+   <div class="span6">
+    <h3>For the ambitious</h3>
+    <p>
+     For those who'd like to assemble their own e(fx)clipse installation based on Eclipse 4.2 or 3.8. we offer an installation guide which helps you get started.
+    </p>
+   </div>
+  </div>
+  <div class="row">
+   <div class="span6">
+    <p>
+     <a class="btn" href="#for-the-lazy">View details</a>
+    </p>
+   </div>
+   <div class="span6">
+    <p>
+     <a class="btn" href="#for-the-ambitious">View details</a>
+    </p>
+   </div>
+  </div>
+  <h4>Update Sites</h4>
+  <p>Release builds: <a href="http://downloads.efxclipse.org/p2-repos/releases/latest/">http://downloads.efxclipse.org/p2-repos/releases/latest/</a>
+  </p>
+  <p>
+  Nightly builds: <a href="http://download.eclipse.org/efxclipse/updates-nightly/site">http://download.eclipse.org/efxclipse/updates-nightly/site</a>
+  </p>
+  <br />
+  <p>
+  Please read <a href="https://groups.google.com/d/topic/efxclipse/zl-391MAkFU/discussion">these notes</a> for more information about release and nightly builds.
+  </p>
+  <div>
+  <span class="label important">For JDK8 users</span><br />
+  If you are living on the edge with JDK8 b75 or later, you'll need the <a href="http://download.eclipse.org/efxclipse/updates-nightly/site">latest nightly builds</a> of e(fx)clipse since starting with b75 JavaFX will be on the extension classpath of your JDK8/JRE8. For autocompletion to work properly in this case, you need to modify your installed JRE such that the Javadoc location for JavaFX points to a local Javadoc resource as shown in <a href="jfx_javadoc.png">this screenshot</a>. We are going to find a better solution for this once the source code is shipped with the JDK. 
+  </div>
+ </section>
+ <section id="for-the-lazy">
+  <div class="page-header">
+   <h1>Preconfigured distributions <small>for the lazy</small></h1>
+  </div>
+  <div class="row">
+  <div class="span6">
+    <h2>Eclipse 4.2.2 SDK</h2>
+    <p>
+     <ul>
+      <li>Eclipse 4.2.2 SDK</li>
+      <li>e(fx)clipse 0.8.1</li>
+      <li>Xtext 2.3.1</li>
+      <li>EGit 2.3.1</li>
+      <li>WST-XML 3.4.2</li>
+      <li>Subclipse 1.8.17</li>
+      <li>Windows only: Mercurial 2.0.0 and Mercurial Hg binaries 2.0.0</li>
+     </ul>
+    </p>
+    <p>
+     <a class="btn" href="http://downloads.efxclipse.org/downloads/latest/eclipse-SDK-4.2.2-win32-efx-0.8.1.zip">Win 32bit</a>
+     <a class="btn" href="http://downloads.efxclipse.org/downloads/latest/eclipse-SDK-4.2.2-win32-x86_64-efx-0.8.1.zip">Win 64bit</a>
+     <a class="btn" href="http://downloads.efxclipse.org/downloads/latest/eclipse-SDK-4.2.2-macosx-cocoa-x86_64-efx-0.8.1.tar.gz">OS-X 64bit</a>
+    </p>
+    <p>
+     <a class="btn" href="http://downloads.efxclipse.org/downloads/latest/eclipse-SDK-4.2.2-linux-gtk-efx-0.8.1.tar.gz">Linux 32bit</a>
+     <a class="btn" href="http://downloads.efxclipse.org/downloads/latest/eclipse-SDK-4.2.2-linux-gtk-x86_64-efx-0.8.1.tar.gz">Linux 64bit</a>
+    </p>
+   </div>
+   <div class="span6">
+    <h2>Eclipse 3.8.2 SDK</h2>
+    <p>
+     <ul>
+      <li>Eclipse 3.8.2 SDK</li>
+      <li>e(fx)clipse 0.8.1</li>
+      <li>Xtext 2.3.1</li>
+      <li>EGit 2.3.1</li>
+      <li>WST-XML 3.4.2</li>
+      <li>Subclipse 1.8.17</li>
+      <li>Windows only: Mercurial 2.0.0 and Mercurial Hg binaries 2.0.0</li>
+     </ul>
+    </p>
+    <p>
+     <a class="btn" href="http://downloads.efxclipse.org/downloads/latest/eclipse-SDK-3.8.2-win32-efx-0.8.1.zip">Win 32bit</a>
+     <a class="btn" href="http://downloads.efxclipse.org/downloads/latest/eclipse-SDK-3.8.2-win32-x86_64-efx-0.8.1.zip">Win 64bit</a>
+     <a class="btn" href="http://downloads.efxclipse.org/downloads/latest/eclipse-SDK-3.8.2-macosx-cocoa-x86_64-efx-0.8.1.tar.gz">OS-X 64bit</a>
+    </p>
+    <p>
+     <a class="btn" href="http://downloads.efxclipse.org/downloads/latest/eclipse-SDK-3.8.2-linux-gtk-efx-0.8.1.tar.gz">Linux 32bit</a>
+     <a class="btn" href="http://downloads.efxclipse.org/downloads/latest/eclipse-SDK-3.8.2-linux-gtk-x86_64-efx-0.8.1.tar.gz">Linux 64bit</a>
+    </p>
+   </div>
+  </div>
+  <div class="row">
+   <div class="span12">
+    <p>
+     For people who prefer to use e(fx)clipse based on the Eclipse 3.7.2 SDK instead of the 3.8/4.2 SDK, we offer a full <b>3.7.2 SDK build</b> at <a href="http://downloads.efxclipse.org/downloads/latest/">this url</a>. <i>Please note that this built has not been tested</i>.<br/>
+	 If you'd like to install the e(fx)clipse tooling into your existing 3.7.2 installation, you can follow the steps below for the 4.2 SDK. Note, however, that e(fx)clipse has two dependencies (Xtext 2.3, e4 Tools 0.12) that the default Eclipse 3.7.2 SDK doesn't know about. So you need to add their p2 repositories (<a href="http://download.eclipse.org/modeling/tmf/xtext/updates/composite/releases/">Xtext</a>, 
+    <a href="http://download.eclipse.org/e4/downloads/drops/R-0.12-201206131100/repository">e4 Tools</a>) as software sites.
+    </p>
+    <p>
+     If you are looking for an older release of e(fx)clipse, take a look into our <a href="http://downloads.efxclipse.org/downloads/archive">archive</a>.
+    </p>
+   </div>
+  </div>
+ </section>
+ <section id="for-the-ambitious">
+  <div class="page-header">
+   <h1>Eclipse 4.3 &amp; 3.8 <small>for the ambitious</small></h1>
+  </div>
+  <div class="row">
+   <div class="span1">
+    <h2>1.</h2>
+   </div>
+   <div class="span5" style="padding-top: 10px;">
+       <img class="thumbnail" src="e4_install_step1.png" />
+   </div>
+   <div class="span6">
+    <p>
+     Download the latest release of the <a href="http://download.eclipse.org/eclipse/downloads/" target="_blank">Eclipse 4.3 SDK</a> or of the <a href="http://download.eclipse.org/eclipse/downloads/eclipse3x.html" target="_blank">Eclipse 3.8 SDK</a> from <a href="http://download.eclipse.org" target="_blank">download.eclipse.org</a>
+    </p>
+   </div>
+  </div>
+  <div class="row">
+   <div class="span1">
+    <h2>2.</h2>
+   </div>
+   <div class="span5" style="padding-top: 10px;">
+       <img class="thumbnail" src="e4_install_step2.png" />
+   </div>
+   <div class="span6">
+    <p>
+     Fire up your Eclipse IDE if you have not done so already.
+    </p>
+   </div>
+  </div>
+  <div class="row">
+   <div class="span1">
+    <h2>3.</h2>
+   </div>
+   <div class="span5" style="padding-top: 10px;">
+       <img class="thumbnail" src="e4_install_step3.png" />
+   </div>
+   <div class="span6">
+    <p>
+     e(fx)clipse is an extension for your Eclipse IDE which is delivered as a so called p2 repository. Extensions like this
+     can be installed using the "Install New Software" wizard.
+    </p>
+   </div>
+  </div>
+  <div class="row">
+   <div class="span1">
+    <h2>4.</h2>
+   </div>
+   <div class="span5" style="padding-top: 10px;">
+       <img class="thumbnail" src="e4_install_step4.png" />
+   </div>
+   <div class="span6">
+    <p>
+     Eclipse does not know about the location of the e(fx)clipse p2 repository so you need to add the repository as a software site. The address is: <a href="http://download.eclipse.org/efxclipse/updates-nightly/site">http://download.eclipse.org/efxclipse/updates-nightly/site</a>
+    </p>
+    <p>
+    <span class="label important">For Eclipse 3.8/Juno user </span><br />
+    You have to add an additional update site for Xtext which is not preconfigured yet for your. The update site is <a href="http://download.eclipse.org/modeling/tmf/xtext/updates/composite/releases/">http://download.eclipse.org/modeling/tmf/xtext/updates/composite/releases/</a>
+    </p>
+   </div>
+  </div>
+  <div class="row">
+   <div class="span1">
+    <h2>5.</h2>
+   </div>
+   <div class="span5" style="padding-top: 10px;">
+       <img class="thumbnail" src="e4_install_step5.png" />
+   </div>
+   <div class="span6">
+    <p>
+     In the tree of installable features, check only the entry corresponding to your release:
+	</p>
+	 <ul>
+	 <li>4.3: e(fx)clipse - IDE - Kepler</li>
+	 <li>3.8: e(fx)clipse - IDE - Juno/Indigo</li>
+	 </ul>
+	 <p>
+	 Also, make sure the "Contact all update sites during install to find required software" is checked.
+	 </p>
+	 You may, however, install the FX Runtime feature into your IDE but we strongly recommend composing your own target platform.
+    </p>
+   </div>
+  </div>
+  <div class="row">
+   <div class="span1">
+    <h2>6.</h2>
+   </div>
+   <div class="span5" style="padding-top: 10px;">
+       <img class="thumbnail" src="e4_install_step6.png" />
+   </div>
+   <div class="span6">
+    <p>
+     Go through the wizard and let p2 do its job.
+    </p>
+   </div>
+  </div>
+  <div class="row">
+   <div class="span1">
+    <h2>7.</h2>
+   </div>
+   <div class="span5" style="padding-top: 10px;">
+       <img class="thumbnail" src="e4_install_step7.png" />
+   </div>
+   <div class="span6">
+    <p>
+     When requested, restart Eclipse.
+    </p>
+   </div>
+  </div>
+ </section>
+</div>
+
+	<script src="js/bootstrap-transition.js"></script>
+	<script src="js/bootstrap-alert.js"></script>
+	<script src="js/bootstrap-modal.js"></script>
+	<script src="js/bootstrap-dropdown.js"></script>
+	<script src="js/bootstrap-scrollspy.js"></script>
+	<script src="js/bootstrap-tab.js"></script>
+	<script src="js/bootstrap-tooltip.js"></script>
+	<script src="js/bootstrap-popover.js"></script>
+	<script src="js/bootstrap-button.js"></script>
+	<script src="js/bootstrap-collapse.js"></script>
+	<script src="js/bootstrap-carousel.js"></script>
+	<script src="js/bootstrap-typeahead.js"></script>
+	
+	
+	<!-- Include the plug-in -->
+	<script src="js/jquery.easing.1.3.js" type="text/javascript"></script>
+	<script src="js/custom.js" type="text/javascript"></script>
+
+</body>
+</html>
