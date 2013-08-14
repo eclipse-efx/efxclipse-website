@@ -26,6 +26,7 @@
               		<li><a href="index.html">Home</a></li>
               		<li class="active"><a href="install.html">Install</a></li>
               		<li><a href="releases.html">Releases</a></li>
+              		<li><a href="http://efxclipse.bestsolution.at">External Addons</a></li>
               		<li><a href="http://wiki.eclipse.org/Efxclipse/Tooling/FXGraph">FXGraph</a></li>
               		<li><a href="http://wiki.eclipse.org/Efxclipse/Tutorials">Tutorials</a></li>
               		<li><a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=Efxclipse">Bug Tracker</a></li>
@@ -92,7 +93,7 @@
    <div class="span6">
     <h3>For the ambitious</h3>
     <p>
-     For those who'd like to assemble their own e(fx)clipse installation based on Eclipse 4.2 or 3.8. we offer an installation guide which helps you get started.
+     For those who'd like to assemble their own e(fx)clipse installation based on Eclipse 4.3 or 3.8. we offer an installation guide which helps you get started.
     </p>
    </div>
   </div>
@@ -108,19 +109,21 @@
     </p>
    </div>
   </div>
-  <h4>Update Sites</h4>
-  <p>Release builds: <a href="http://downloads.efxclipse.org/p2-repos/releases/latest/">http://downloads.efxclipse.org/p2-repos/releases/latest/</a>
-  </p>
-  <p>
-  Nightly builds: <a href="http://download.eclipse.org/efxclipse/updates-nightly/site">http://download.eclipse.org/efxclipse/updates-nightly/site</a>
-  </p>
-  <br />
-  <p>
-  Please read <a href="https://groups.google.com/d/topic/efxclipse/zl-391MAkFU/discussion">these notes</a> for more information about release and nightly builds.
-  </p>
-  <div>
-  <span class="label important">For JDK8 users</span><br />
-  If you are living on the edge with JDK8 b75 or later, you'll need the <a href="http://download.eclipse.org/efxclipse/updates-nightly/site">latest nightly builds</a> of e(fx)clipse since starting with b75 JavaFX will be on the extension classpath of your JDK8/JRE8. For autocompletion to work properly in this case, you need to modify your installed JRE such that the Javadoc location for JavaFX points to a local Javadoc resource as shown in <a href="jfx_javadoc.png">this screenshot</a>. We are going to find a better solution for this once the source code is shipped with the JDK. 
+ </section>
+ <section id="for-the-lazy">
+ <div class="page-header">
+   <h1>Update sites <small>extend an Eclipse install</small></h1>
+  </div>
+  <div class="row">
+  	<span class="span12">
+  	<p>
+  	To install the e(fx)clipse tooling into your already existing Eclipse you have to add an Update site. There's no released yet available so you need
+  	to add the nightly update-site <a href="http://download.eclipse.org/efxclipse/updates-nightly/site">http://download.eclipse.org/efxclipse/updates-nightly/site</a>
+  	</p>
+  	<p>
+  	If you are not familiar with update-sites you can follow the <a href="#for-the-ambitious">short guide below</a> or use a <a href="#for-the-lazy">pre-packaged</a> version
+  	</p>
+  	</span>
   </div>
  </section>
  <section id="for-the-lazy">
@@ -128,64 +131,10 @@
    <h1>Preconfigured distributions <small>for the lazy</small></h1>
   </div>
   <div class="row">
-  <div class="span6">
-    <h2>Eclipse 4.2.2 SDK</h2>
-    <p>
-     <ul>
-      <li>Eclipse 4.2.2 SDK</li>
-      <li>e(fx)clipse 0.8.1</li>
-      <li>Xtext 2.3.1</li>
-      <li>EGit 2.3.1</li>
-      <li>WST-XML 3.4.2</li>
-      <li>Subclipse 1.8.17</li>
-      <li>Windows only: Mercurial 2.0.0 and Mercurial Hg binaries 2.0.0</li>
-     </ul>
-    </p>
-    <p>
-     <a class="btn" href="http://downloads.efxclipse.org/downloads/latest/eclipse-SDK-4.2.2-win32-efx-0.8.1.zip">Win 32bit</a>
-     <a class="btn" href="http://downloads.efxclipse.org/downloads/latest/eclipse-SDK-4.2.2-win32-x86_64-efx-0.8.1.zip">Win 64bit</a>
-     <a class="btn" href="http://downloads.efxclipse.org/downloads/latest/eclipse-SDK-4.2.2-macosx-cocoa-x86_64-efx-0.8.1.tar.gz">OS-X 64bit</a>
-    </p>
-    <p>
-     <a class="btn" href="http://downloads.efxclipse.org/downloads/latest/eclipse-SDK-4.2.2-linux-gtk-efx-0.8.1.tar.gz">Linux 32bit</a>
-     <a class="btn" href="http://downloads.efxclipse.org/downloads/latest/eclipse-SDK-4.2.2-linux-gtk-x86_64-efx-0.8.1.tar.gz">Linux 64bit</a>
-    </p>
-   </div>
-   <div class="span6">
-    <h2>Eclipse 3.8.2 SDK</h2>
-    <p>
-     <ul>
-      <li>Eclipse 3.8.2 SDK</li>
-      <li>e(fx)clipse 0.8.1</li>
-      <li>Xtext 2.3.1</li>
-      <li>EGit 2.3.1</li>
-      <li>WST-XML 3.4.2</li>
-      <li>Subclipse 1.8.17</li>
-      <li>Windows only: Mercurial 2.0.0 and Mercurial Hg binaries 2.0.0</li>
-     </ul>
-    </p>
-    <p>
-     <a class="btn" href="http://downloads.efxclipse.org/downloads/latest/eclipse-SDK-3.8.2-win32-efx-0.8.1.zip">Win 32bit</a>
-     <a class="btn" href="http://downloads.efxclipse.org/downloads/latest/eclipse-SDK-3.8.2-win32-x86_64-efx-0.8.1.zip">Win 64bit</a>
-     <a class="btn" href="http://downloads.efxclipse.org/downloads/latest/eclipse-SDK-3.8.2-macosx-cocoa-x86_64-efx-0.8.1.tar.gz">OS-X 64bit</a>
-    </p>
-    <p>
-     <a class="btn" href="http://downloads.efxclipse.org/downloads/latest/eclipse-SDK-3.8.2-linux-gtk-efx-0.8.1.tar.gz">Linux 32bit</a>
-     <a class="btn" href="http://downloads.efxclipse.org/downloads/latest/eclipse-SDK-3.8.2-linux-gtk-x86_64-efx-0.8.1.tar.gz">Linux 64bit</a>
-    </p>
-   </div>
-  </div>
-  <div class="row">
-   <div class="span12">
-    <p>
-     For people who prefer to use e(fx)clipse based on the Eclipse 3.7.2 SDK instead of the 3.8/4.2 SDK, we offer a full <b>3.7.2 SDK build</b> at <a href="http://downloads.efxclipse.org/downloads/latest/">this url</a>. <i>Please note that this built has not been tested</i>.<br/>
-	 If you'd like to install the e(fx)clipse tooling into your existing 3.7.2 installation, you can follow the steps below for the 4.2 SDK. Note, however, that e(fx)clipse has two dependencies (Xtext 2.3, e4 Tools 0.12) that the default Eclipse 3.7.2 SDK doesn't know about. So you need to add their p2 repositories (<a href="http://download.eclipse.org/modeling/tmf/xtext/updates/composite/releases/">Xtext</a>, 
-    <a href="http://download.eclipse.org/e4/downloads/drops/R-0.12-201206131100/repository">e4 Tools</a>) as software sites.
-    </p>
-    <p>
-     If you are looking for an older release of e(fx)clipse, take a look into our <a href="http://downloads.efxclipse.org/downloads/archive">archive</a>.
-    </p>
-   </div>
+  	<span class="span12">
+  	If you don't want to use update sites but prefer an all-in-one download those downloads are provided by an external website <a href="http://efxclipse.bestsolution.at">http://efxclipse.bestsolution.at</a>
+  	because this distro packages also other plugins not available directly from Eclipse.org (e.g. subclipse).
+  	</span>
   </div>
  </section>
  <section id="for-the-ambitious">
