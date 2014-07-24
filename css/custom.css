@@ -77,6 +77,10 @@ h1 small {
 	color: rgb(191, 191, 191);	
 }
 
+h2 small {
+	color: rgb(191, 191, 191);	
+}
+
 .label.important {
 	background-color: rgb(196, 60, 53);
 }

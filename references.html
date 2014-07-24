@@ -90,12 +90,22 @@
    	</p>
     </div>
     <div class="span8">
-   	<p>
-   		The <a href="http://spring.io/tools/sts">Spring Tool Suite</a> as well as the <a href="http://spring.io/tools/ggts">Groovy/Grails Tool Suite</a> (the two Eclipse-based tool suite distributions from <a href="http://www.gopivotal.com/">Pivotal</a>) 
-   		uses the OSGi runtime integration of <strong>e(fx)clipse</strong> to integrate JavaFX components into the UI of the IDE (using the SWT bridge 
-   		from JavaFX). The main purpose of this is to use the WebKit-based cross-platform web view component of JavaFX to implement and 
-   		use highly sophisticated HTML5-based UIs inside the desktop IDE.
-   	</p>
+    <p>
+    	The <a href="http://spring.io/tools/sts">Spring Tool Suite</a> as well as the <a href="http://spring.io/tools/ggts">Groovy/Grails Tool Suite</a> (the two Eclipse-based tool suite distributions from 
+    	Pivotal) uses the OSGi runtime integration of <strong>e(fx)clipse</strong> to integrate JavaFX components into the UI of the IDE 
+    	(using the SWT bridge from JavaFX). The main purpose of this is to use the WebKit-based cross-platform web view 
+    	component of JavaFX to implement and use highly sophisticated HTML5-based UIs inside the desktop IDE.
+	</p>
+	<p>
+		As a first step the dashboard component inside the tool suites (which was build using traditional SWT widgets and 
+		form-based JFace layouts ) got replaced with an HTML-based version that is rendered using the JavaFX web view. It 
+		includes dynamic content as well as the option to trigger actions inside the IDE when a user presses buttons inside 
+		the web view.
+	</p>
+	<p>
+		The cross-platform availability of JavaFX as part of the JDK (including support for high-res retina displays on OSX) 
+		turns this into an interesting solution as alternative to using the native browser widgets that come as part of SWT.
+    </p>
     </div>
     </div>
  </section>
