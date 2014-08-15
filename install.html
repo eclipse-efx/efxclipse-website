@@ -26,7 +26,9 @@
               		<li><a href="index.html">Home</a></li>
               		<li class="active"><a href="install.html">Install</a></li>
               		<li><a href="releases.html">Releases</a></li>
+              		<li><a href="references.html">References</a></li>
               		<li><a href="http://efxclipse.bestsolution.at">External Addons</a></li>
+              		<li><a href="community.html">Community</a></li>
               		<li><a href="http://wiki.eclipse.org/Efxclipse/Tooling/FXGraph">FXGraph</a></li>
               		<li><a href="http://wiki.eclipse.org/Efxclipse/Tutorials">Tutorials</a></li>
               		<li><a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=Efxclipse">Bug Tracker</a></li>
@@ -53,27 +55,12 @@
 <div class="container">
  <section id="prereq-efxclipse">
  	<div class="page-header">
- 	 <h1>Incubation</h1>
- 	</div>
- 	<div class="row">
-   <div class="span16">
-   	<p>
-   		e(fx)clipse is an incubating project. <br/>
-   		<a href="http://wiki.eclipse.org/Development_Resources/Process_Guidelines/What_is_Incubation"></a><img src="http://projects.eclipse.org/sites/all/modules/pmi/project_state/images/incubating.png"></a>
-   		<br />
-   		Make sure you understand what that means by <a href="http://wiki.eclipse.org/Development_Resources/Process_Guidelines/What_is_Incubation">reading</a>.
-   	</p>
-   </div>
-   </div>
- </section>
- <section id="prereq-efxclipse">
- 	<div class="page-header">
  	 <h1>Prerequisites <small>from external parties</small></h1>
  	</div>
  	<div class="row">
    <div class="span16">
    <p>
-     You'll need at least JDK 7u7 installed in your system. Make sure your e(fx)clipse installation uses this JDK.
+     You'll need at least JDK 8 installed in your system. Make sure your e(fx)clipse installation uses this JDK when you launch your Eclipse instance!
    </p>
    </div>
    </div>
@@ -93,7 +80,7 @@
    <div class="span6">
     <h3>For the ambitious</h3>
     <p>
-     For those who'd like to assemble their own e(fx)clipse installation based on Eclipse 4.3.x we offer an installation guide which helps you get started.
+     For those who'd like to assemble their own e(fx)clipse installation based on Eclipse 4.4.x we offer an installation guide which helps you get started.
     </p>
    </div>
   </div>
@@ -129,7 +116,7 @@
   	<span class="span12">
   	<p>
   	To install the e(fx)clipse tooling into your already existing Eclipse you have to add an Update site. There's no released yet available so you need
-  	to add the release update-site <a href="http://download.eclipse.org/efxclipse/updates-released/0.9.0/site">http://download.eclipse.org/efxclipse/updates-released/0.9.0/site</a> 
+  	to add the release update-site <a href="http://download.eclipse.org/efxclipse/updates-released/1.0.0/site">http://download.eclipse.org/efxclipse/updates-released/1.0.0/site</a> 
   	and <a href="http://download.eclipse.org/modeling/tmf/xtext/updates/composite/releases/">http://download.eclipse.org/modeling/tmf/xtext/updates/composite/releases/</a>
   	for the needed xtext dependencies.
   	</p>
@@ -141,7 +128,7 @@
  </section>
  <section id="for-the-ambitious">
   <div class="page-header">
-   <h2>Eclipse 4.3 SR1</h2>
+   <h2>Eclipse 4.4</h2>
   </div>
   <div class="row">
    <div class="span1">
@@ -152,7 +139,7 @@
    </div>
    <div class="span6">
     <p>
-     Download the latest release of the <a href="http://download.eclipse.org/eclipse/downloads/" target="_blank">Eclipse 4.3 SDK</a> or of the <a href="http://download.eclipse.org/eclipse/downloads/eclipse3x.html" target="_blank">Eclipse 3.8 SDK</a> from <a href="http://download.eclipse.org" target="_blank">download.eclipse.org</a>
+     Download the latest release of the <a href="http://download.eclipse.org/eclipse/downloads/" target="_blank">Eclipse 4.4 SDK</a>.
     </p>
    </div>
   </div>
@@ -194,10 +181,6 @@
     <p>
      Eclipse does not know about the location of the e(fx)clipse p2 repository so you need to add the repository as a software site. The address is: <a href="http://download.eclipse.org/efxclipse/updates-released/0.9.0/site">http://download.eclipse.org/efxclipse/updates-released/0.9.0/site</a>
     </p>
-    <p>
-    <span class="label important">For Kepler user </span><br />
-    You have to add an additional update site for Xtext which is not preconfigured yet for your. The update site is <a href="http://download.eclipse.org/modeling/tmf/xtext/updates/composite/releases/">http://download.eclipse.org/modeling/tmf/xtext/updates/composite/releases/</a>
-    </p>
    </div>
   </div>
   <div class="row">
@@ -212,7 +195,7 @@
      In the tree of installable features, check only the entry corresponding to your release:
 	</p>
 	 <ul>
-	 <li>4.3: e(fx)clipse - IDE - Kepler</li>
+	 <li>e(fx)clipse - IDE</li>
 	 </ul>
 	 <p>
 	 Also, make sure the "Contact all update sites during install to find required software" is checked.
@@ -251,6 +234,7 @@
 </div>
 <footer class="footer">
  <div class="container">
+  <br/><br/>
   <p class="pull-right">
    <a href="#">Back to top</a>
   </p>
